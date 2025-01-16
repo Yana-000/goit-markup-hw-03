@@ -7,10 +7,46 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.container {
+  max-weight: 1128px;
+  padding: 0 15px;
+  margin: 0 auto;
+  padding-bottom: 120xp;
+}
 a {
   text-decoration: none;
+}
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.adress-item {
+  display: flex;
+  align-items: center;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -20,6 +56,10 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
 }
 .header-logo .logo-part {
   color: #2e2f42;
@@ -32,6 +72,8 @@ a {
   color: #2e2f42;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  padding: 24 px 0;
+  display: block;
 }
 .nav-link-button:hover {
   color: #404bbf;
@@ -42,10 +84,11 @@ a {
 
 .adress-item-link {
   font-size: 16px;
-  font-weight: 500;
   color: #434455;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  display: block;
+  padding: 24px 0;
 }
 .adress-item-link:focus {
   color: #404bbf;
@@ -55,9 +98,15 @@ a {
 }
 address {
   font-style: normal;
+  margin-left: auto;
+}
+.adress-item {
+  gap: 40px;
 }
 .section-page {
   background-color: #2e2f42;
+  align-items: center;
+  display: flex;
 }
 .page-title {
   font-family: "Roboto", sans-serif;
@@ -67,6 +116,7 @@ address {
   color: #ffffff;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  padding: 190px 0;
 }
 .button-text {
   font-family: "Roboto", sans-serif;
